@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles_harmanTravelling.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="new_page.html">Harman Traveling</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="new_page.html">Page 1</a></li>
+                <li><a href="new_page.html">Page 2</a></li>
+                <li><a href="new_page.html">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form id = "myForm" method="post" onsubmit="return validateAndSend()">
+            <h2>Education Appointment Form</h2>
+
+            <div class="form-part_1">
+                <input type="text" class="title" placeholder="Title" required>
+                <input type="text" class="name" placeholder="Your Name" required>
+                <input type="email" class="email" placeholder="Email" >
+
+                <div style="display: flex;">
+                    <select class="select-list" name="area-codes" id="areaCodesSelect" required></select>
+                    
+                    </select>
+                    <input type="tel" class="phone" placeholder="Phone number" required>
+                </div>
+                
+
+                <select class="select-list" name="courses" required>
+                    <option value class="init" disabled selected>Course Type</option>
+                </select>
+
+                <select class="select-list" name="cities" required>
+                    <option value class="init" disabled selected>City</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-part_2">
+                <h3>How would you like to be located?</h3>
+
+                <div class="select-list">
+                   
+
+                    <select class="select-list" name="located-ways" required>
+                        <option value="course1">By phone</option>
+                        <option value="course2">By email</option>
+                        
+                    </select>
+
+                    
+                </div>
+
+                <div class="select-list">              
+
+                    <select name="hours" class="select-list" required>
+                        <option value="hour1">Hours : 8am 10pm</option>
+                        <option value="hour2">Hours : 9am 11pm</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
+                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the <a href="new_page.html"
+                        class="term-service">Terms and Conditions</a></label>
+            </div>
+
+            <div class="form-send">
+                <button type = "button" class = "button" onclick="validateAndSend()">Request an appointment</button>
+            </div>
+
+        </form>    
+    </div>
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+
+</html>
