@@ -1,1 +1,1 @@
-My projects and assignemnt solutions for the university
+My projects and assignment solutions for the university
