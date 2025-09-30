@@ -1,3 +1,3 @@
-pip install -r requirements.txt
+A phone contact app...
 
-pip freeze > requirements.txt
+app both has "backend" & "frontend"
